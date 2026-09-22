@@ -1,6 +1,6 @@
-price = float(input(f'Введите цену:'))
-discount = float(input(f'Введите скидку в процентах:'))
-vat = float(input(f'Введите НДС в процентах:'))
+price = float(input(f'Введите цену: '))
+discount = float(input(f'Введите скидку в процентах: '))
+vat = float(input(f'Введите НДС в процентах: '))
 base = price * (1 - discount / 100)
 vat_amount = base * (vat / 100)
 total = base + vat_amount
