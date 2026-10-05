@@ -109,15 +109,29 @@ def flatten(mat: list[list | tuple]) -> list:
 
 if __name__ == "__main__":
     print("min_max:")
-    for nums in [[3, -1, 5, 5, 0], [42], [-5, -2, -9], [1.5, 2, 2.0, -3.1]]:
+    for nums in [
+        [3, -1, 5, 5, 0], 
+        [42], 
+        [-5, -2, -9], 
+        [1.5, 2, 2.0, -3.1]
+    ]:
         print(f"  {nums} -> {min_max(nums)}")
 
     print("unique_sorted:")
-    for nums in [[3, 1, 2, 1, 3], [], [-1, -1, 0, 2, 2], [1.0, 1, 2.5, 2.5, 0]]:
+    for nums in [
+        [3, 1, 2, 1, 3],
+        [],
+        [-1, -1, 0, 2, 2],
+        [1.0, 1, 2.5, 2.5, 0]
+    ]:
         print(f"  {nums} -> {unique_sorted(nums)}")
 
     print("flatten:")
-    for mat in [[[1, 2], [3, 4]], [[1, 2], (3, 4, 5)], [[1], [], [2, 3]]]:
+    for mat in [
+        [[1, 2], [3, 4]],
+        [[1, 2], (3, 4, 5)],
+        [[1], [], [2, 3]]
+    ]:
         print(f"  {mat} -> {flatten(mat)}")
 
     # Ошибки

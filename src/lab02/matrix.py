@@ -138,15 +138,28 @@ def col_sums(mat: list[list[float | int]]) -> list[float]:
 
 if __name__ == "__main__":
     print("transpose:")
-    for mat in [[[1, 2, 3]], [[1], [2], [3]], [[1, 2], [3, 4]], []]:
+    for mat in [
+        [[1, 2, 3]], 
+        [[1], [2], [3]], 
+        [[1, 2], [3, 4]], 
+        []
+    ]:
         print(f"  {mat} -> {transpose(mat)}")
 
     print("row_sums:")
-    for mat in [[[1, 2, 3], [4, 5, 6]], [[-1, 1], [10, -10]], [[0, 0], [0, 0]]]:
+    for mat in [
+        [[1, 2, 3], [4, 5, 6]],
+        [[-1, 1], [10, -10]],
+        [[0, 0], [0, 0]]
+    ]:
         print(f"  {mat} -> {row_sums(mat)}")
 
     print("col_sums:")
-    for mat in [[[1, 2, 3], [4, 5, 6]], [[-1, 1], [10, -10]], [[0, 0], [0, 0]]]:
+    for mat in [
+        [[1, 2, 3], [4, 5, 6]],
+        [[-1, 1], [10, -10]],
+        [[0, 0], [0, 0]]
+    ]:
         print(f"  {mat} -> {col_sums(mat)}")
 
     # Ошибки:
