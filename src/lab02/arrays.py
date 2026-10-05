@@ -85,17 +85,17 @@ def flatten(mat: list[list | tuple]) -> list:
     Raises:
         TypeError: если матрица содержит элементы, не являющиеся списками или кортежами.
 
-     Examples:
-            >>> flatten([[1, 2], [3, 4]])
-            [1, 2, 3, 4]
-            >>> flatten([[1, 2], (3, 4, 5)])
-            [1, 2, 3, 4, 5]
-            >>> flatten([[1], [], [2, 3]])
-            [1, 2, 3]
-            >>> flatten([[1, 2], "ab"])
-            Traceback (most recent call last):
-                ...
-            TypeError: flatten: матрица должна состоять из списков или кортежей
+    Examples:
+        >>> flatten([[1, 2], [3, 4]])
+        [1, 2, 3, 4]
+        >>> flatten([[1, 2], (3, 4, 5)])
+        [1, 2, 3, 4, 5]
+        >>> flatten([[1], [], [2, 3]])
+        [1, 2, 3]
+        >>> flatten([[1, 2], "ab"])
+        Traceback (most recent call last):
+            ...
+        TypeError: flatten: матрица должна состоять из списков или кортежей
     """
     result = []
     for row in mat:
@@ -110,9 +110,9 @@ def flatten(mat: list[list | tuple]) -> list:
 if __name__ == "__main__":
     print("min_max:")
     for nums in [
-        [3, -1, 5, 5, 0], 
-        [42], 
-        [-5, -2, -9], 
+        [3, -1, 5, 5, 0],
+        [42],
+        [-5, -2, -9],
         [1.5, 2, 2.0, -3.1]
     ]:
         print(f"  {nums} -> {min_max(nums)}")
@@ -138,5 +138,5 @@ if __name__ == "__main__":
     # print("min_max([]):")
     # print(min_max([]))
 
-    # print("flatten([[1, 2], "ab"]):")
+    # print("flatten([[1, 2], 'ab']):")
     # print(flatten([[1, 2], "ab"]))

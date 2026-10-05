@@ -88,10 +88,10 @@ def row_sums(mat: list[list[float | int]]) -> list[float]:
         raise ValueError("row_sums: матрица пустая")
     if is_jagged(mat):
         raise ValueError("row_sums: матрица рваная")
-    row_sum = []
+    sums = []
     for row in mat:
-        row_sum.append(sum(row))
-    return row_sum
+        sums.append(sum(row))
+    return sums
 
 
 def col_sums(mat: list[list[float | int]]) -> list[float]:
@@ -105,7 +105,6 @@ def col_sums(mat: list[list[float | int]]) -> list[float]:
 
     Raises:
         ValueError: если матрица пустая или рваная.
-
 
     Examples:
         >>> col_sums([[1, 2, 3], [4, 5, 6]])
@@ -139,9 +138,9 @@ def col_sums(mat: list[list[float | int]]) -> list[float]:
 if __name__ == "__main__":
     print("transpose:")
     for mat in [
-        [[1, 2, 3]], 
-        [[1], [2], [3]], 
-        [[1, 2], [3, 4]], 
+        [[1, 2, 3]],
+        [[1], [2], [3]],
+        [[1, 2], [3, 4]],
         []
     ]:
         print(f"  {mat} -> {transpose(mat)}")
