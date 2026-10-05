@@ -43,7 +43,6 @@ def transpose(mat: list[list[float | int]]) -> list[list]:
             ...
         ValueError: transpose: матрица рваная
     """
-
     if is_jagged(mat):
         raise ValueError("transpose: матрица рваная")
     if not mat:
