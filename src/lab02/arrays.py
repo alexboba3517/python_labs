@@ -75,16 +75,16 @@ def unique_sorted(nums: list[float | int]) -> list[float | int]:
 
 def flatten(mat: list[list | tuple]) -> list:
     """Возвращает одномерный список, состоящий из всех элементов матрицы.
-    
+
     Args:
         mat: матрица (список списков или кортежей).
 
     Returns:
         Одномерный список элементов матрицы.
-    
+
     Raises:
         TypeError: если матрица содержит элементы, не являющиеся списками или кортежами.
-    
+
      Examples:
             >>> flatten([[1, 2], [3, 4]])
             [1, 2, 3, 4]
@@ -126,4 +126,3 @@ if __name__ == "__main__":
 
     # print("flatten([[1, 2], "ab"]):")
     # print(flatten([[1, 2], "ab"]))
-    
