@@ -6,12 +6,18 @@
 
 ```text
 python_labs
+├── data/            # тестовые данные для заданий
+│   └── lab03/
 ├── images/          # скриншоты выполнения заданий
 │   ├── lab01/
-│   └── lab02/
+│   ├── lab02/
+│   └── lab03/
 ├── src/             # исходный код и отчёты
+│   ├── lib/             # переиспользуемые модули (с ЛР3)
+│   │   └── text.py
 │   ├── lab01/
-│   └── lab02/
+│   ├── lab02/
+│   └── lab03/
 │       ├── README.md    # отчёт по лабораторной работе
 │       └── *.py         # решения заданий
 └── README.md
@@ -23,12 +29,14 @@ python_labs
 |---|------|-------|
 | 1 | Ввод/вывод и форматирование | [src/lab01/README.md](src/lab01/README.md) |
 | 2 | Коллекции и матрицы | [src/lab02/README.md](src/lab02/README.md) |
+| 3 | Тексты и частоты слов | [src/lab03/README.md](src/lab03/README.md) |
 
 ### Запуск
 
 Все скрипты запускаются из корня репозитория:
 
 ```bash
-python src/lab01/01_greetings.py    # ЛР1: каждое задание — отдельный скрипт
-python -m src.lab02.arrays          # ЛР2: каждый файл — модуль с функциями
+python src/lab01/01_greetings.py                        # ЛР1: каждое задание — отдельный скрипт
+python -m src.lab02.arrays                              # ЛР2: каждый файл — модуль с функциями
+echo "Привет, мир!" | python src/lab03/text_stats.py    # ЛР3: текст читается из stdin
 ```
