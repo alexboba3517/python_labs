@@ -7,17 +7,20 @@
 ```text
 python_labs
 ├── data/            # тестовые данные для заданий
-│   └── lab03/
+│   ├── lab03/
+│   └── lab04/
 ├── images/          # скриншоты выполнения заданий
 │   ├── lab01/
 │   ├── lab02/
-│   └── lab03/
+│   ├── lab03/
+│   └── lab04/
 ├── src/             # исходный код и отчёты
 │   ├── lib/             # переиспользуемые модули (с ЛР3)
 │   │   └── text.py
 │   ├── lab01/
 │   ├── lab02/
-│   └── lab03/
+│   ├── lab03/
+│   └── lab04/
 │       ├── README.md    # отчёт по лабораторной работе
 │       └── *.py         # решения заданий
 └── README.md
@@ -30,6 +33,7 @@ python_labs
 | 1 | Ввод/вывод и форматирование | [src/lab01/README.md](src/lab01/README.md) |
 | 2 | Коллекции и матрицы | [src/lab02/README.md](src/lab02/README.md) |
 | 3 | Тексты и частоты слов | [src/lab03/README.md](src/lab03/README.md) |
+| 4 | Файлы: TXT/CSV и отчёты | [src/lab04/README.md](src/lab04/README.md) |
 
 ### Запуск
 
@@ -39,4 +43,5 @@ python_labs
 python src/lab01/01_greetings.py                        # ЛР1: каждое задание — отдельный скрипт
 python -m src.lab02.arrays                              # ЛР2: каждый файл — модуль с функциями
 echo "Привет, мир!" | python src/lab03/text_stats.py    # ЛР3: текст читается из stdin
+python -m src.lab04.text_report                         # ЛР4: файл → CSV-отчёт (параметры — в отчёте ЛР4)
 ```
