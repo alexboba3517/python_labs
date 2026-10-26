@@ -8,21 +8,26 @@
 python_labs
 ├── data/            # тестовые данные для заданий
 │   ├── lab03/
-│   └── lab04/
+│   ├── lab04/
+│   ├── samples/         # входные файлы ЛР5 (и ЛР6)
+│   └── out/             # результаты конвертаций ЛР5
 ├── images/          # скриншоты выполнения заданий
 │   ├── lab01/
 │   ├── lab02/
 │   ├── lab03/
-│   └── lab04/
+│   ├── lab04/
+│   └── lab05/
 ├── src/             # исходный код и отчёты
 │   ├── lib/             # переиспользуемые модули (с ЛР3)
 │   │   └── text.py
 │   ├── lab01/
 │   ├── lab02/
 │   ├── lab03/
-│   └── lab04/
+│   ├── lab04/
+│   └── lab05/
 │       ├── README.md    # отчёт по лабораторной работе
 │       └── *.py         # решения заданий
+├── requirements.txt # зависимости (openpyxl)
 └── README.md
 ```
 
@@ -34,6 +39,7 @@ python_labs
 | 2 | Коллекции и матрицы | [src/lab02/README.md](src/lab02/README.md) |
 | 3 | Тексты и частоты слов | [src/lab03/README.md](src/lab03/README.md) |
 | 4 | Файлы: TXT/CSV и отчёты | [src/lab04/README.md](src/lab04/README.md) |
+| 5 | JSON и конвертации (JSON↔CSV, CSV→XLSX) | [src/lab05/README.md](src/lab05/README.md) |
 
 ### Запуск
 

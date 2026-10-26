@@ -23,7 +23,7 @@ from pathlib import Path
 from src.lab04.io_txt_csv import read_text, write_csv
 from src.lib.text import count_freq, normalize, tokenize, top_n
 
-TOP_COUNT = 5
+TOP_COUNT = 3
 REPORT_HEADER = ("word", "count")
 PER_FILE_HEADER = ("file", "word", "count")
 DEFAULT_INPUT = "data/lab04/input.txt"
