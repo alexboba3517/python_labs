@@ -16,7 +16,8 @@ python_labs
 │   ├── lab02/
 │   ├── lab03/
 │   ├── lab04/
-│   └── lab05/
+│   ├── lab05/
+│   └── lab06/
 ├── src/             # исходный код и отчёты
 │   ├── lib/             # переиспользуемые модули (с ЛР3)
 │   │   └── text.py
@@ -24,7 +25,8 @@ python_labs
 │   ├── lab02/
 │   ├── lab03/
 │   ├── lab04/
-│   └── lab05/
+│   ├── lab05/
+│   └── lab06/
 │       ├── README.md    # отчёт по лабораторной работе
 │       └── *.py         # решения заданий
 ├── requirements.txt # зависимости (openpyxl)
@@ -40,6 +42,7 @@ python_labs
 | 3 | Тексты и частоты слов | [src/lab03/README.md](src/lab03/README.md) |
 | 4 | Файлы: TXT/CSV и отчёты | [src/lab04/README.md](src/lab04/README.md) |
 | 5 | JSON и конвертации (JSON↔CSV, CSV→XLSX) | [src/lab05/README.md](src/lab05/README.md) |
+| 6 | CLI-утилиты на argparse | [src/lab06/README.md](src/lab06/README.md) |
 
 ### Запуск
 
@@ -50,4 +53,5 @@ python src/lab01/01_greetings.py                        # ЛР1: каждое з
 python -m src.lab02.arrays                              # ЛР2: каждый файл — модуль с функциями
 echo "Привет, мир!" | python src/lab03/text_stats.py    # ЛР3: текст читается из stdin
 python -m src.lab04.text_report                         # ЛР4: файл → CSV-отчёт (параметры — в отчёте ЛР4)
+python -m src.lab06.cli_text stats --input data/lab03/sample.txt   # ЛР6: CLI с подкомандами (см. --help)
 ```
