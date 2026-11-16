@@ -34,10 +34,10 @@ from src.lab07.sorting import bubble_sort, insertion_sort, selection_sort
 CSV_PATH = "data/lab07/bench.csv"
 SORT_SIZES = [1_000, 10_000, 100_000]
 TWO_SUM_SIZES = [1_000, 10_000]
-SKIP_ABOVE = 10_000    # O(n²) на n больше этого не запускаем: дольше 60 с
-ONE_RUN_FROM = 10_000  # с этого n O(n²) идёт секунды — мерим одним запуском
-REPEAT = 5   # сколько раз повторить серию запусков
-NUMBER = 10  # сколько запусков в одной серии
+SKIP_ABOVE = 10_000
+ONE_RUN_FROM = 10_000
+REPEAT = 5
+NUMBER = 10
 
 
 def measure(fn, slow: bool = False) -> float:

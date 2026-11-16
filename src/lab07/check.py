@@ -59,7 +59,6 @@ def check_sorting(fn, trials: int = 100) -> int:
             f"{fn.__name__} ошиблась на {nums}: {result}"
         )
         assert nums == original, f"{fn.__name__} изменила исходный список"
-    # отдельно крайние случаи: пустой список и один элемент
     assert fn([]) == [], f"{fn.__name__} ошиблась на []"
     assert fn([7]) == [7], f"{fn.__name__} ошиблась на [7]"
     return trials + 2
@@ -86,10 +85,8 @@ def check_search(trials: int = 100) -> int:
     count = 0
     for _ in range(trials):
         nums = random_list()
-        # иногда x выходит за диапазон значений — тогда его точно нет
         x = random.randint(-110, 110)
 
-        # linear_search против list.index
         try:
             expected = nums.index(x)
         except ValueError:
@@ -100,7 +97,6 @@ def check_search(trials: int = 100) -> int:
         )
         count += 1
 
-        # binary_search: проверяем значение по найденному индексу
         s = sorted(nums)
         got = binary_search(s, x)
         if x in s:
@@ -113,7 +109,6 @@ def check_search(trials: int = 100) -> int:
             )
         count += 1
 
-        # крайние элементы: первый и последний
         if s:
             for edge in (s[0], s[-1]):
                 got = binary_search(s, edge)
