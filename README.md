@@ -10,6 +10,7 @@ python_labs
 │   ├── lab03/
 │   ├── lab04/
 │   ├── lab07/           # bench.csv — результаты бенчмарка ЛР7
+│   ├── lab08/           # students_*.json — входные и выходные данные ЛР8
 │   ├── samples/         # входные файлы ЛР5 (и ЛР6)
 │   └── out/             # результаты конвертаций ЛР5
 ├── images/          # скриншоты выполнения заданий
@@ -19,7 +20,8 @@ python_labs
 │   ├── lab04/
 │   ├── lab05/
 │   ├── lab06/
-│   └── lab07/
+│   ├── lab07/
+│   └── lab08/
 ├── src/             # исходный код и отчёты
 │   ├── lib/             # переиспользуемые модули (с ЛР3)
 │   │   └── text.py
@@ -29,7 +31,8 @@ python_labs
 │   ├── lab04/
 │   ├── lab05/
 │   ├── lab06/
-│   └── lab07/
+│   ├── lab07/
+│   └── lab08/
 │       ├── README.md    # отчёт по лабораторной работе
 │       └── *.py         # решения заданий
 ├── requirements.txt # зависимости (openpyxl)
@@ -47,6 +50,7 @@ python_labs
 | 5 | JSON и конвертации (JSON↔CSV, CSV→XLSX) | [src/lab05/README.md](src/lab05/README.md) |
 | 6 | CLI-утилиты на argparse | [src/lab06/README.md](src/lab06/README.md) |
 | 7 | Поиск, сортировка и замеры времени | [src/lab07/README.md](src/lab07/README.md) |
+| 8 | Модель Student без классов: валидация и JSON | [src/lab08/README.md](src/lab08/README.md) |
 
 ### Запуск
 
@@ -59,4 +63,5 @@ echo "Привет, мир!" | python src/lab03/text_stats.py    # ЛР3: тек
 python -m src.lab04.text_report                         # ЛР4: файл → CSV-отчёт (параметры — в отчёте ЛР4)
 python -m src.lab06.cli_text stats --input data/lab03/sample.txt   # ЛР6: CLI с подкомандами (см. --help)
 python -m src.lab07.check                               # ЛР7: проверка против эталона, затем src.lab07.bench
+python -m src.lab08.demo                                # ЛР8: JSON туда-обратно и битые записи
 ```
