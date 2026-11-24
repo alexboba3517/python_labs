@@ -179,6 +179,9 @@ def student_age(rec: dict, today: date | None = None) -> int:
     born = date.fromisoformat(rec["birthdate"])
     if today is None:
         today = date.today()
+    elif type(today) is not date:
+        raise TypeError(f"today: ожидалась дата (date), получено {today!r}")
+    born = date.fromisoformat(rec["birthdate"])
     age = today.year - born.year
     if (today.month, today.day) < (born.month, born.day):
         age -= 1
