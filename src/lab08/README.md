@@ -176,7 +176,6 @@ def student_age(rec: dict, today: date | None = None) -> int:
     >>> student_age(s, today=date(2026, 9, 20))
     19
     """
-    born = date.fromisoformat(rec["birthdate"])
     if today is None:
         today = date.today()
     elif type(today) is not date:
