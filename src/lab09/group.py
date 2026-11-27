@@ -72,7 +72,7 @@ def load_students(path) -> list[dict]:
                 f"{path}: ожидался заголовок {','.join(STUDENT_FIELDS)}, получено {got}"
             )
         students = []
-        for n, row in enumerate(reader, start=2):  # строка 1 — заголовок
+        for n, row in enumerate(reader, start=2):
             if None in row:
                 raise ValueError(f"{path}, строка {n}: лишние значения {row[None]}")
             if None in row.values():
